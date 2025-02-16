@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio with Background Image</title>
+    <style>
+        body {
+            background-image: url('image.jpg'); /* Replace with your local image path */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .message {
+            font-size: 2rem;
+            color: red;
+            margin-bottom: 20px;
+        }
+        .message::after {
+            content: ' ❤️'; /* Heart shape */
+        }
+        audio {
+            width: 300px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            padding: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="message">For someone special, who will always be in my heart</div>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg"> <!-- Replace with your local audio file path -->
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>
